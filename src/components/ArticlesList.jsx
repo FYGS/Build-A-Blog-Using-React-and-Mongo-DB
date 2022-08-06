@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-import { articles } from '../data';
-
-export const ArticlesList = () => (
+export const ArticlesList = ({ articles }) => (
 	<>
 		{articles.map((article, key) => (
 			<Link
