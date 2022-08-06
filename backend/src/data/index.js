@@ -1,1 +1,2 @@
-export * from './articlesInfo'
+export * from './articlesInfo';
+export * from './db';
