@@ -1,11 +1,24 @@
-import { HomePage } from './pages';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { AboutPage, ArticlePage, ArticlesListPage, HomePage } from './pages';
+
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <HomePage></HomePage>
-    </div>
-  );
+	return (
+		<Router>
+			<div className="App">
+				<div id="page-body">
+					<Routes>
+						<Route path="/" element={<HomePage />} exact />
+						<Route path="about" element={<AboutPage />} />
+						<Route path="articles-list" element={<ArticlesListPage />} />
+						<Route path="article" element={<ArticlePage />} />
+					</Routes>
+				</div>
+			</div>
+		</Router>
+	);
 }
 
 export default App;

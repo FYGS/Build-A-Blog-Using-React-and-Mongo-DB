@@ -1,8 +1,6 @@
-import React from 'react';
-
-export const HomePage = () => (
+export const AboutPage = () => (
 	<>
-		<h1>Hello, Welcome to my Blog!</h1>
+		<h1>About me</h1>
 
 		<p>
 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum deserunt
